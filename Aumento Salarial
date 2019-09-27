@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(void)
+{
+
+setlocale(LC_ALL, "Portuguese");
+float sal, sf, a;
+
+printf("Digite seu salário: ");
+scanf("%f", &sal);
+
+a = sal * 0.10;
+sf = sal + a;
+
+printf("Seu salário com aumento é %.2f", sf);
+}

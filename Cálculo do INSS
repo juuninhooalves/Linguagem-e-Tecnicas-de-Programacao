@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <locale.h>
+//Cálculo do INSS
+
+int main(void)
+{
+
+setlocale(LC_ALL, "Portuguese");
+float sal, inss;
+
+printf("Digite seu salário: R$");
+scanf("%f", &sal);
+
+if(sal <= 1751.81)
+{
+  inss = 0.08 * sal;
+}
+
+else 
+{
+  if(sal <= 2919.772)
+  {
+    inss = 0.09 * sal;
+  }
+  else
+  {
+    if (sal <= 5839.45)
+    {
+      inss = 0.11 * sal;
+    }
+    else
+    {
+      inss = 621.04;
+    }
+  }
+}
+
+printf("O valor do INSS é R$%.2f", inss);
+
+}

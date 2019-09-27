@@ -1,0 +1,39 @@
+#include <stdio.h>
+// #include <conio.h>
+#include <locale.h>
+
+int main(void) {
+float n1, n2, n3, m;
+
+setlocale(LC_ALL, "Portuguese");
+
+printf("Digite a nota da NP1: ");
+scanf("%f", &n1);
+
+printf("Digite a nota da NP2: ");
+scanf("%f", &n2);
+
+printf("Digite a nota do PIM: ");
+scan("%f", n3);
+
+m = ((n1 * 0,4) + (n2 * 0.4); + (n3 * 0,2));
+
+if( m < 5)
+{
+  printf("Sua nota é: %.1f\nVocê foi reprovado",m);
+}
+
+else 
+{
+   if( m < 6 )
+   {
+    printf("Sua nota é: %.1f\nVocê está de exame",m);
+   }
+
+   else
+   {
+    printf("Sua nota é: %.1f\nVocê foi aprovado", m);
+   }
+}
+
+}

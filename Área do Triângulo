@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(void)
+{
+
+setlocale(LC_ALL, "Portuguese");
+float h, b, a;
+
+printf("Digite a altura do Triângulo: ");
+scanf("%f", &h);
+
+printf("Digite a base do Triângulo: ");
+scanf("%f", &b);
+
+a = b*h/2;
+
+printf("A área do Triângulo é de %.0f²", a);
+
+}
